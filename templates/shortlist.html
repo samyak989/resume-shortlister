@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post" action= /shortlist/result/>
+    {% csrf_token %}
+    <button style="margin-left:325px;" type="submit" name="run_script">View shortlisted resumes</button>
+</form>
+
+{% endblock %}
